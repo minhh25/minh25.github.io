@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Đình Minh - Professional CV</title>
+    <style>
+        :root {
+            --primary-color: #2e7d32;
+            --secondary-color: #4caf50;
+            --accent-color: #81c784;
+            --bg-color: #e8f5e9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            line-height: 1.6;
+        }
+
+        .cv-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background: var(--primary-color);
+            color: white;
+            padding: 30px;
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            border: 5px solid var(--secondary-color);
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .contact-item i {
+            margin-right: 10px;
+            color: var(--secondary-color);
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .header .title {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            background: var(--bg-color);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px);
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--secondary-color);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--secondary-color);
+        }
+
+        .date {
+            color: var(--accent-color);
+            font-style: italic;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="sidebar">
+            <img src="https://img.freepik.com/premium-vector/avatar-male-character-young-age-isolated-portrait-teenager-sweater-personage-photo-social-media-cv-student-high-school-university-college-friendly-guy-vector-flat_87689-2390.jpg?w=1480" alt="Profile" class="profile-image">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <i>📧</i>
+                    <span>nguyenminh@email.com</span>
+                </div>
+                <div class="contact-item">
+                    <i>📱</i>
+                    <span>+84 123 456 789</span>
+                </div>
+                <div class="contact-item">
+                    <i>🏠</i>
+                    <span>Hà Nội, Việt Nam</span>
+                </div>
+                <div class="contact-item">
+                    <i>🌐</i>
+                    <span>portfolio.com</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="header">
+                <h1>NGUYỄN ĐÌNH MINH</h1>
+                <div class="title">Senior Web Developer</div>
+            </div>
+
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p>Experienced web developer with over 5 years of expertise in creating responsive and dynamic web applications. Specialized in modern JavaScript frameworks and full-stack development.</p>
+            </div>
+
+            <div class="section">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5/CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">React.js</div>
+                    <div class="skill-item">Node.js</div>
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">Docker</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <h3>Công ty ABC - Web Developer Intern</h3>
+                    <div class="date">2023 - Present</div>
+                    <ul class="experience-list">
+                        <li>Phát triển website công ty</li>
+                        <li>Tối ưu hóa hiệu suất website</li>
+                        <li>Làm việc với team trong các dự án web</li>
+                    </ul>
+                </div>
+            </div>
